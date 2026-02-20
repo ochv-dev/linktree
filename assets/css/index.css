@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+}
+.container-profile {
+
+    border: solid 1px #ffffff;
+    border-radius: 15px;
+    height: 900px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+.profile-photo {
+    width: 150px; /* Ancho de la foto de perfil */
+    height: 150px; /* Altura de la foto de perfil */
+    border-radius: 50%; /* Hace que la foto sea circular */
+    margin-bottom: 20px; /* Espacio debajo de la foto */
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Espaciado vertical entre la sección "Sobre mí" */
+}
+#about-me-tittle {
+    margin: 0 0 10px 0; /* Elimina el margen por defecto del título y agrega un margen inferior */
+    font-size: 24px; /* Tamaño de fuente para el título */
+}
+
+#about-me-text {
+    text-align: justify;
+    width: 80%; /* Ancho de la sección "Sobre mí" */
+    margin: 20px 0; /* Espaciado vertical entre la sección "Sobre mí" */
+}
+
+/* Estilos para los botones de contacto */
+.contact-link {
+    background: linear-gradient(135deg, #ec4899, #6366f1);
+    display: flex;
+    height: 40px; /* Altura del botón */
+    width: 200px; /* Ancho del botón */
+    border: solid 1px #000; /* Borde del botón */
+    padding: 5px 5px; /* Espaciado interno para hacer el botón más grande */
+    border-radius: 0px 20px 0px 20px; /* Bordes redondeados para un aspecto más amigable */
+    margin: 0 0 10px 0; /* Espaciado entre los botones */
+}
+
+.contact-photo {
+    width: 30px; /* Ancho de la imagen de contacto */
+    height: 30px; /* Altura de la imagen de contacto */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+/* Es necesario apuntar a la etiqueta 'a' para sobreescribir su color azul por defecto */
+.contact a {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    display: block;
+    padding: 10px 10px 10px 10px; /* Espaciado interno para hacer el botón más grande */
+}
+
+.qr-code-container {
+    flex-direction: column;
+    position: absolute; bottom: 20px; right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#mobile-view {
+    margin: 0 0 5px 0; /* Elimina el margen por defecto del título */
+    font-size: 30px; /* Tamaño de fuente para el título */
+}
+.qr-code {
+    width: 150px; /* Ancho del código QR */
+    height: 150px; /* Altura del código QR */
+    border: solid 20px #ffffff; /* Borde del código QR */
+    border-radius: 0 30px 0 30px; /* Bordes redondeados para un aspecto más amigable */
+}
+
+@media (max-width: 768px) { .qr-code-container { display: none; } }
